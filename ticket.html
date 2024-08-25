@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Ticket</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body onload="displayTicket()">
+    <h1>Your Digital Ticket</h1>
+    <div class="ticket">
+        <p><strong>Event:</strong> <span id="event-name"></span></p>
+        <p><strong>Date:</strong> <span id="event-date"></span></p>
+        <p><strong>Ticket ID:</strong> <span id="ticket-id"></span></p>
+        <svg id="barcode"></svg>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
